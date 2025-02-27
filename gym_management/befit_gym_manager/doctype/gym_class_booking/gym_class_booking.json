@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-27 17:07:13.508304",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "class_name",
+  "trainer",
+  "date",
+  "time",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Select",
+   "label": "class_name",
+   "options": "\nCardio Crush\nFull body\nAerobics"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "trainer",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "time"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 17:18:01.187015",
+ "modified_by": "Administrator",
+ "module": "BeFit Gym Manager",
+ "name": "Gym Class Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

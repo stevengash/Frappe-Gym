@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-27 17:30:34.849052",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "weight",
+  "calories",
+  "progress",
+  "entry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "member",
+   "options": "Gym Member"
+  },
+  {
+   "description": "Member's weight in kg",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "weight"
+  },
+  {
+   "description": "Daily calorie intake\n",
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "label": "calories"
+  },
+  {
+   "description": "Notes on fitness progress",
+   "fieldname": "progress",
+   "fieldtype": "Small Text",
+   "label": "progress"
+  },
+  {
+   "description": "Date of measurement",
+   "fieldname": "entry_date",
+   "fieldtype": "Date",
+   "label": "entry_date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 17:34:13.249538",
+ "modified_by": "Administrator",
+ "module": "BeFit Gym Manager",
+ "name": "Gym Metrics",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

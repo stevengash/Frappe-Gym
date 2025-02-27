@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-27 16:42:48.910603",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "membership_details_section",
+  "member",
+  "membership_plan",
+  "start_date",
+  "end_date",
+  "remaining_days",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "membership_details_section",
+   "fieldtype": "Section Break",
+   "label": "Membership Details"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "membership_plan",
+   "fieldtype": "Select",
+   "label": "membership_plan\t",
+   "options": "Basic\nPremium\nVIP"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "start_date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "end_date\t"
+  },
+  {
+   "fieldname": "remaining_days",
+   "fieldtype": "Int",
+   "label": "remaining_days\t"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "\nActive\nExpired\nCancelled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 16:47:36.736424",
+ "modified_by": "Administrator",
+ "module": "BeFit Gym Manager",
+ "name": "Gym Membership",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

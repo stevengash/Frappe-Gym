@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-27 17:29:04.013288",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "max_memberships",
+  "max_trainers",
+  "booking_limit",
+  "allow_guest_classes"
+ ],
+ "fields": [
+  {
+   "fieldname": "max_memberships",
+   "fieldtype": "Int",
+   "label": "max_memberships"
+  },
+  {
+   "fieldname": "max_trainers",
+   "fieldtype": "Int",
+   "label": "max_trainers"
+  },
+  {
+   "fieldname": "booking_limit",
+   "fieldtype": "Int",
+   "label": "booking_limit\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_guest_classes",
+   "fieldtype": "Check",
+   "label": "allow_guest_classes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 17:30:19.185986",
+ "modified_by": "Administrator",
+ "module": "BeFit Gym Manager",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

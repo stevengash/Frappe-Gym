@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-27 15:35:33.980603",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_details_section",
+  "column_break_oblj",
+  "email",
+  "full_name",
+  "gender",
+  "phone_number",
+  "column_break_igdf",
+  "emergency_contact",
+  "trainer_assigned",
+  "profile_picture",
+  "active_status",
+  "joining_date",
+  "section_break_jupf",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_oblj",
+   "fieldtype": "Column Break",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "full_name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "phone_number"
+  },
+  {
+   "fieldname": "emergency_contact",
+   "fieldtype": "Data",
+   "label": "emergency_contact"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "gender"
+  },
+  {
+   "fieldname": "active_status",
+   "fieldtype": "Select",
+   "label": "active_status",
+   "options": "\nActive\nInactive"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "address"
+  },
+  {
+   "fieldname": "trainer_assigned",
+   "fieldtype": "Link",
+   "label": "trainer_assigned",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "column_break_igdf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_jupf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "profile_picture",
+   "fieldtype": "Attach Image",
+   "label": "profile_picture"
+  },
+  {
+   "fieldname": "joining_date",
+   "fieldtype": "Date",
+   "label": "joining_date"
+  },
+  {
+   "fieldname": "member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Member Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-27 16:41:46.567040",
+ "modified_by": "Administrator",
+ "module": "BeFit Gym Manager",
+ "name": "Gym Member",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
