@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{locker_number}",
+ "creation": "2025-02-28 11:27:37.071413",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "locker_details_section",
+  "locker_number",
+  "status",
+  "assigned_member",
+  "last_maintenance_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_details_section",
+   "fieldtype": "Section Break",
+   "label": "Locker Details"
+  },
+  {
+   "default": "L00",
+   "fieldname": "locker_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "locker_number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "status",
+   "options": "\nAvailable\nOccupied\nMaintenance"
+  },
+  {
+   "fieldname": "assigned_member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "assigned_member\t",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "last_maintenance_date",
+   "fieldtype": "Date",
+   "label": "last_maintenance_date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-28 13:23:28.030000",
+ "modified_by": "Administrator",
+ "module": "BeFit Gym Manager",
+ "name": "Gym Locker",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

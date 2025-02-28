@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{trainer} Subscriber",
  "creation": "2025-02-27 16:48:16.550775",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "trainer_subscribers_section",
   "member",
   "trainer",
   "start_date",
@@ -43,14 +45,20 @@
    "fieldname": "rating",
    "fieldtype": "Rating",
    "label": "rating"
+  },
+  {
+   "fieldname": "trainer_subscribers_section",
+   "fieldtype": "Section Break",
+   "label": "Trainer Subscribers"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:00:06.003709",
+ "modified": "2025-02-28 12:46:28.366051",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Trainer Subscription",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

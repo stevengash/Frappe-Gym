@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{member} {class_name}",
  "creation": "2025-02-27 17:07:13.508304",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -29,7 +30,7 @@
    "fieldname": "trainer",
    "fieldtype": "Link",
    "label": "trainer",
-   "options": "Gym Member"
+   "options": "Gym Trainer"
   },
   {
    "fieldname": "date",
@@ -38,21 +39,23 @@
   },
   {
    "fieldname": "time",
-   "fieldtype": "Datetime",
+   "fieldtype": "Time",
    "label": "time"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "status"
+   "label": "status",
+   "options": "\nActive\nInactive"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:18:01.187015",
+ "modified": "2025-02-28 11:19:10.397029",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Class Booking",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

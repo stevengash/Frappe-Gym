@@ -1,16 +1,17 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{full_name}-{phone_number}",
  "creation": "2025-02-27 15:35:33.980603",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "member_details_section",
   "column_break_oblj",
-  "email",
   "full_name",
-  "gender",
   "phone_number",
+  "email",
+  "gender",
   "column_break_igdf",
   "emergency_contact",
   "trainer_assigned",
@@ -29,17 +30,24 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "full_name"
+   "in_list_view": 1,
+   "label": "full_name",
+   "reqd": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "email"
+   "in_list_view": 1,
+   "label": "email",
+   "options": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Data",
-   "label": "phone_number"
+   "in_list_view": 1,
+   "label": "phone_number",
+   "reqd": 1
   },
   {
    "fieldname": "emergency_contact",
@@ -49,7 +57,8 @@
   {
    "fieldname": "gender",
    "fieldtype": "Select",
-   "label": "gender"
+   "label": "gender",
+   "options": "\nMale\nFemale"
   },
   {
    "fieldname": "active_status",
@@ -94,10 +103,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 16:41:46.567040",
+ "modified": "2025-02-28 09:24:20.533560",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Member",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

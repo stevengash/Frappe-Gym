@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{member}",
  "creation": "2025-02-27 16:42:48.910603",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -55,10 +56,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 16:47:36.736424",
+ "modified": "2025-02-28 12:29:41.626112",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Membership",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

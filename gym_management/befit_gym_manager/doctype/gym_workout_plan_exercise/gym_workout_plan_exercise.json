@@ -15,31 +15,43 @@
   {
    "fieldname": "exercise_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "exercise_name"
   },
   {
    "description": "Number of sets",
    "fieldname": "sets",
    "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "sets"
   },
   {
    "description": "Number of repetitions per set",
    "fieldname": "reps",
    "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "reps"
   },
   {
    "description": "Rest time between sets (in seconds)\n",
    "fieldname": "resr_time",
    "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "resr_time"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-27 17:26:03.404618",
+ "modified": "2025-02-28 10:48:12.050928",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Workout Plan Exercise",

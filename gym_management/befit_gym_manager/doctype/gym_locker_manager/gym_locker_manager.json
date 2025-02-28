@@ -1,17 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{full_name}-{phone_number}",
- "creation": "2025-02-27 16:31:22.653269",
+ "autoname": "format:{full_name}",
+ "creation": "2025-02-28 12:51:23.358645",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "full_name",
   "phone_number",
   "email",
-  "specialization",
-  "experience",
-  "profile_picture"
+  "assigned_lockers",
+  "status"
  ],
  "fields": [
   {
@@ -20,39 +19,36 @@
    "label": "full_name"
   },
   {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "phone_number"
+  },
+  {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "email",
    "options": "Email"
   },
   {
-   "fieldname": "phone_number",
-   "fieldtype": "Data",
-   "label": "phone_number"
+   "fieldname": "assigned_lockers",
+   "fieldtype": "Table",
+   "label": "assigned_lockers",
+   "options": "Gym Locker"
   },
   {
-   "fieldname": "specialization",
-   "fieldtype": "Data",
-   "label": "specialization"
-  },
-  {
-   "fieldname": "experience",
-   "fieldtype": "Int",
-   "label": "experience"
-  },
-  {
-   "fieldname": "profile_picture",
-   "fieldtype": "Attach Image",
-   "label": "profile_picture\t"
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "\nAvailable\nOff Duty"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 09:57:33.985259",
+ "modified": "2025-02-28 13:24:45.052107",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
- "name": "Gym Trainer",
- "naming_rule": "Expression",
+ "name": "Gym Locker Manager",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

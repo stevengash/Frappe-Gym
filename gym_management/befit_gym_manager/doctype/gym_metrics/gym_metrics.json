@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{member}",
  "creation": "2025-02-27 17:30:34.849052",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -22,13 +23,15 @@
    "description": "Member's weight in kg",
    "fieldname": "weight",
    "fieldtype": "Float",
-   "label": "weight"
+   "label": "weight",
+   "precision": "0"
   },
   {
-   "description": "Daily calorie intake\n",
+   "description": "Daily calorie intake (kcal)",
    "fieldname": "calories",
    "fieldtype": "Float",
-   "label": "calories"
+   "label": "calories",
+   "precision": "0"
   },
   {
    "description": "Notes on fitness progress",
@@ -45,10 +48,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:34:13.249538",
+ "modified": "2025-02-28 10:21:09.908652",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Metrics",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

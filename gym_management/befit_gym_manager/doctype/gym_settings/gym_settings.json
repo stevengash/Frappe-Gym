@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:Capacity of {max_memberships} members and {max_trainers} trainers",
  "creation": "2025-02-27 17:29:04.013288",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -35,10 +36,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:30:19.185986",
+ "modified": "2025-02-28 10:36:04.257583",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Settings",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

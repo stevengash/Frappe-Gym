@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{member} {locker_number}",
  "creation": "2025-02-27 17:00:57.939896",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,8 +9,7 @@
   "member",
   "locker_number",
   "booking_date",
-  "duration",
-  "status"
+  "duration"
  ],
  "fields": [
   {
@@ -20,32 +20,29 @@
   },
   {
    "fieldname": "locker_number",
-   "fieldtype": "Data",
-   "label": "locker_number\t"
+   "fieldtype": "Link",
+   "label": "locker_number\t",
+   "options": "Gym Locker"
   },
   {
    "fieldname": "booking_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "booking_date"
   },
   {
+   "description": "Hours to spend in gym",
    "fieldname": "duration",
    "fieldtype": "Int",
    "label": "duration"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "status",
-   "options": "\nOccupied\nAvailable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:06:23.977667",
+ "modified": "2025-02-28 12:17:21.208049",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Locker Booking",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

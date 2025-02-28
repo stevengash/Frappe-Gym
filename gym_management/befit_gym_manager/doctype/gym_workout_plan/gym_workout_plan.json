@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{plan_name}",
  "creation": "2025-02-27 17:18:31.236121",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "workout_plan_section",
   "plan_name",
   "difficulty",
   "trainer",
@@ -30,6 +32,7 @@
    "options": "Gym Trainer"
   },
   {
+   "description": "3 Months (1 - 2 Hours Daily)",
    "fieldname": "duration",
    "fieldtype": "Int",
    "label": "duration"
@@ -39,14 +42,20 @@
    "fieldtype": "Table",
    "label": "exercises",
    "options": "Gym Workout Plan Exercise"
+  },
+  {
+   "fieldname": "workout_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Workout Plan"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:28:09.897551",
+ "modified": "2025-02-28 10:58:53.918915",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Workout Plan",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
