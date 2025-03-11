@@ -17,28 +17,36 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "full_name"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "email",
    "options": "Email"
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Data",
-   "label": "phone_number"
+   "in_list_view": 1,
+   "label": "phone_number",
+   "placeholder": "+254",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "specialization",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "specialization"
   },
   {
    "fieldname": "experience",
    "fieldtype": "Int",
-   "label": "experience"
+   "label": "experience",
+   "non_negative": 1
   },
   {
    "fieldname": "profile_picture",
@@ -48,7 +56,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 09:57:33.985259",
+ "modified": "2025-03-03 10:03:21.913431",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Trainer",

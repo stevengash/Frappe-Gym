@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{trainer} Subscriber",
+ "autoname": "format:{trainer} Subscriber {##}",
  "creation": "2025-02-27 16:48:16.550775",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,6 +11,7 @@
   "trainer",
   "start_date",
   "end_date",
+  "status",
   "column_break_twog",
   "rating"
  ],
@@ -19,7 +20,8 @@
    "fieldname": "member",
    "fieldtype": "Link",
    "label": "member",
-   "options": "Gym Member"
+   "options": "Gym Member",
+   "unique": 1
   },
   {
    "fieldname": "trainer",
@@ -50,11 +52,17 @@
    "fieldname": "trainer_subscribers_section",
    "fieldtype": "Section Break",
    "label": "Trainer Subscribers"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "\nActive\nInactive"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 12:46:28.366051",
+ "modified": "2025-03-10 10:58:45.449805",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Trainer Subscription",

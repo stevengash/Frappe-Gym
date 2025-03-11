@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{member} {locker_number}",
+ "autoname": "format:{member} {locker_number} {#}",
  "creation": "2025-02-27 17:00:57.939896",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -38,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 12:17:21.208049",
+ "modified": "2025-03-10 12:48:44.145123",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Locker Booking",

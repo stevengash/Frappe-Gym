@@ -23,29 +23,40 @@
   {
    "fieldname": "member",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "member",
-   "options": "Gym Member"
+   "options": "Gym Member",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "membership_plan",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "membership_plan\t",
-   "options": "Basic\nPremium\nVIP"
+   "options": "Basic\nPremium\nVIP",
+   "reqd": 1
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "start_date"
+   "in_list_view": 1,
+   "label": "start_date",
+   "reqd": 1
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "end_date\t"
+   "in_list_view": 1,
+   "label": "end_date\t",
+   "reqd": 1
   },
   {
    "fieldname": "remaining_days",
    "fieldtype": "Int",
-   "label": "remaining_days\t"
+   "label": "remaining_days\t",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "status",
@@ -56,10 +67,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 12:29:41.626112",
+ "modified": "2025-03-03 11:01:40.120135",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
- "name": "Gym Membership",
+ "name": "Gym Membership Plan",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [

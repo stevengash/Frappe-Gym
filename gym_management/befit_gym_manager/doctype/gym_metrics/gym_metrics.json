@@ -6,68 +6,71 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "member",
   "weight",
   "calories",
-  "progress",
-  "entry_date"
+  "column_break_uvut",
+  "date",
+  "section_break_hoes",
+  "progress"
  ],
  "fields": [
-  {
-   "fieldname": "member",
-   "fieldtype": "Link",
-   "label": "member",
-   "options": "Gym Member"
-  },
   {
    "description": "Member's weight in kg",
    "fieldname": "weight",
    "fieldtype": "Float",
-   "label": "weight",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Weight",
    "precision": "0"
   },
   {
    "description": "Daily calorie intake (kcal)",
    "fieldname": "calories",
    "fieldtype": "Float",
-   "label": "calories",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Calories",
    "precision": "0"
   },
   {
    "description": "Notes on fitness progress",
    "fieldname": "progress",
    "fieldtype": "Small Text",
-   "label": "progress"
+   "label": "Comment"
   },
   {
+   "default": "Today",
    "description": "Date of measurement",
-   "fieldname": "entry_date",
+   "fieldname": "date",
    "fieldtype": "Date",
-   "label": "entry_date"
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_uvut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hoes",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2025-02-28 10:21:09.908652",
+ "modified": "2025-03-11 11:12:21.698924",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Metrics",
  "naming_rule": "Expression",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

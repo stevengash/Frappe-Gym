@@ -15,11 +15,12 @@
   "column_break_igdf",
   "emergency_contact",
   "trainer_assigned",
-  "profile_picture",
-  "active_status",
   "joining_date",
+  "profile_picture",
   "section_break_jupf",
-  "address"
+  "address",
+  "metrics_tab",
+  "table_zirb"
  ],
  "fields": [
   {
@@ -43,39 +44,41 @@
    "reqd": 1
   },
   {
+   "default": "+254",
    "fieldname": "phone_number",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "phone_number",
-   "reqd": 1
+   "placeholder": "+254",
+   "reqd": 1,
+   "unique": 1
   },
   {
+   "default": "+254",
    "fieldname": "emergency_contact",
    "fieldtype": "Data",
-   "label": "emergency_contact"
+   "label": "emergency_contact",
+   "reqd": 1
   },
   {
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "gender",
-   "options": "\nMale\nFemale"
-  },
-  {
-   "fieldname": "active_status",
-   "fieldtype": "Select",
-   "label": "active_status",
-   "options": "\nActive\nInactive"
+   "options": "\nMale\nFemale",
+   "reqd": 1
   },
   {
    "fieldname": "address",
    "fieldtype": "Small Text",
-   "label": "address"
+   "label": "address",
+   "reqd": 1
   },
   {
    "fieldname": "trainer_assigned",
    "fieldtype": "Link",
    "label": "trainer_assigned",
-   "options": "Gym Trainer"
+   "options": "Gym Trainer",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_igdf",
@@ -83,27 +86,40 @@
   },
   {
    "fieldname": "section_break_jupf",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Address"
   },
   {
    "fieldname": "profile_picture",
    "fieldtype": "Attach Image",
-   "label": "profile_picture"
+   "label": "profile_picture",
+   "reqd": 1
   },
   {
    "fieldname": "joining_date",
    "fieldtype": "Date",
-   "label": "joining_date"
+   "label": "joining_date",
+   "reqd": 1
   },
   {
    "fieldname": "member_details_section",
    "fieldtype": "Section Break",
    "label": "Member Details"
+  },
+  {
+   "fieldname": "metrics_tab",
+   "fieldtype": "Tab Break",
+   "label": "METRICS"
+  },
+  {
+   "fieldname": "table_zirb",
+   "fieldtype": "Table",
+   "options": "Gym Metrics"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 09:24:20.533560",
+ "modified": "2025-03-11 11:04:44.167814",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Member",
