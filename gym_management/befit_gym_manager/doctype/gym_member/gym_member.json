@@ -14,7 +14,6 @@
   "gender",
   "column_break_igdf",
   "emergency_contact",
-  "trainer_assigned",
   "joining_date",
   "profile_picture",
   "section_break_jupf",
@@ -74,13 +73,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "trainer_assigned",
-   "fieldtype": "Link",
-   "label": "trainer_assigned",
-   "options": "Gym Trainer",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_igdf",
    "fieldtype": "Column Break"
   },
@@ -119,7 +111,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-11 11:04:44.167814",
+ "modified": "2025-03-11 11:57:52.021752",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Member",

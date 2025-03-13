@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{member}",
+ "autoname": "format:{member}-{##}",
  "creation": "2025-02-27 16:42:48.910603",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,6 +9,8 @@
   "membership_details_section",
   "member",
   "membership_plan",
+  "trainer_assigned",
+  "column_break_gayw",
   "start_date",
   "end_date",
   "remaining_days",
@@ -63,11 +65,21 @@
    "fieldtype": "Select",
    "label": "status",
    "options": "\nActive\nExpired\nCancelled"
+  },
+  {
+   "fieldname": "trainer_assigned",
+   "fieldtype": "Link",
+   "label": "trainer_assigned",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "column_break_gayw",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-03 11:01:40.120135",
+ "modified": "2025-03-13 11:13:40.880252",
  "modified_by": "Administrator",
  "module": "BeFit Gym Manager",
  "name": "Gym Membership Plan",
