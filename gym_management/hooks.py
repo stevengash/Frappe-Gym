@@ -253,3 +253,7 @@ fixtures = [
     "Custom DocPerm",
     "Workflow State"
 ]
+api_include = [
+    "befit_gym_manager.services.fitness_service",
+    "befit_gym_manager.services.revenue_service"
+]
